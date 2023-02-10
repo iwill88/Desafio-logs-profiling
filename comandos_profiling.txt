@@ -1,0 +1,5 @@
+artillery quick --count 50 --num 20 http://localhost:8080/info --output bloqueante.txt
+node --prof-process bloq-log.log > bloq-log.txt
+
+artillery quick --count 50 --num 20 http://localhost:8080/info --output nobloqueante.txt
+node --prof-process nonbloq-log.log > nonbloq-log.txt
