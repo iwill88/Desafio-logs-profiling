@@ -341,7 +341,7 @@ app.get('/productos', (req, res) => {
    
 });
 
-const PORT = Number(process.argv[2])|| 8080 ;
+const PORT = process.env.PORT || 8081 ;
 
 app.get('/info', (req,res) => {
   const info = {
