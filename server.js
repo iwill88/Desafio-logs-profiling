@@ -27,7 +27,6 @@ const Users = new UsersContenedor;
 const {normalize, denormalize, schema} = require("normalizr");
 const {inspect} =require('util');
 require('dotenv').config()
-//const PORT = 8080;
 const LOGIN_URL = process.env.LOGIN_URL
 
 
